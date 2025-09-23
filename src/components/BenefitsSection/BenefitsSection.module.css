@@ -9,6 +9,6 @@
 @media screen and (max-width: 992px) {
     .benefitCards {
         grid-template-columns: 1fr;
-        row-gap: calc(68px + 28px);
+        row-gap: calc(40px + 28px);
     }
 }
