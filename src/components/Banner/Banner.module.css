@@ -36,18 +36,22 @@
     height: 100%;
 }
 
+.imgs {
+    position: relative;
+}
+
 .rightAb {
     position: absolute;
-    left: 100%;
+    left: -110%;
     top: 100%;
-    transform: translateY(-50%);
+    transform: translate(100%, -100%);
 }
 
 .leftAb {
     position: absolute;
-    right: 100%;
+    right: -110%;
     bottom: 100%;
-    transform: translateY(70%);
+    transform: translate(100%, 100%);
 }
 
 @media screen and (min-width: 993px) and (max-width: 1919px) {
@@ -63,14 +67,15 @@
     }
 
     .rightAb {
-        transform: translateY(-55%);
+        left: -50%;
+        bottom: 100%;
+        transform: translate(100%, -100%);
     }
 
     .leftAb {
-        position: absolute;
-        right: 100%;
+        right: -10%;
         bottom: 100%;
-        transform: translateY(70%);
+        transform: translate(100%, 100%);
     }
 
     .leftImg {
@@ -86,7 +91,7 @@
 @media screen and (max-width: 992px) {
 
     .container {
-        padding: 52px 17px 14px 17px;
+        padding: 40px 17px 14px 17px;
     }
 
     .content {
@@ -108,16 +113,16 @@
 
     .rightAb {
         content: url("/imgs/BannerAbstractCircleRightMobile.png");
-        left: 135%;
-        top: 110%;
-        transform: translateX(100%, -55%);
+        left: 100%;
+        bottom: 100%;
+        transform: translate(-100%, -100%);
     }
 
     .leftAb {
         max-width: 32.5617px;
-        right: 125%;
-        bottom: 140%;
-        transform: translateY(70%);
+        right: 90%;
+        bottom: 100%;
+        transform: translate(100%, 100%);
     }
 
     .leftImg {

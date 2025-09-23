@@ -22,3 +22,14 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .sectionBoxHeader {
+        padding: 8px 14px;
+        border-radius: 6px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

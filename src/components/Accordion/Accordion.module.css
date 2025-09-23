@@ -9,6 +9,7 @@
     .accordionHeader {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
 
         h3 {
             height: min-content;
@@ -79,6 +80,35 @@
                 max-width: 504px;
                 padding-top: 20px;
                 margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .accordion {
+        padding: 20px 24px;
+        border-radius: 10px;
+
+        .accordionHeader {
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .iconButton {
+                padding: 6px;
+                font-size: 20px;
+            }
+        }
+
+        .accordionContent {
+
+            p {
                 font-size: 16px;
             }
         }

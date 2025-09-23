@@ -13,7 +13,7 @@ const FaqSection = () => {
             <div className={styles.accordionsContainer}>
                 <div className={styles.accordions}>
                     <Accordion
-                        title={'How do you handle food allergies and dietary restrictions?'}
+                        title={'What are the school hours at Little Learners Academy?'}
                         content={'Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.'}
                         active={true}
                     />

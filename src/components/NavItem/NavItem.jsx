@@ -1,10 +1,12 @@
 import styles from './NavItem.module.css'
 
-const NavItem = ({ text, active = false }) => {
+const NavItem = ({ navItems, active = false, menu = false }) => {
     return (
-        <button className={`${styles.navItem} ${active ? styles.active : ''}`}>
-            {text}
-        </button>
+        <ul className={`${styles.navItem}`}>
+            {navItems.map((item) => (
+                <li className={`${active ? styles.active : ''} ${menu ? styles.menu : ''}`}>{item}</li>
+            ))}
+        </ul>
     )
 }
 

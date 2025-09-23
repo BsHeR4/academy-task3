@@ -200,6 +200,95 @@
 
 @media screen and (max-width: 992px) {
     .footer {
-        padding-top: 80px;
+        padding: 80px 16px 20px 16px;
+
+        .footerCard {
+            padding: 60px 30px 30px 30px;
+
+            .top {
+                flex-direction: column;
+                padding-bottom: 30px;
+
+                .leftColumn {
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .logo {
+                        text-align: center;
+
+                        img {
+                            max-width: 182.69px;
+                            max-height: 40px;
+                        }
+
+                        p {
+                            padding-top: 16px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .contacts {
+                        gap: 20px;
+
+                        .contact {
+                            gap: 8px;
+
+                            .contactIcon {
+                                padding: 6px;
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+        .middle {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            .terms {
+                gap: 6px;
+
+                p {
+                    text-align: center;
+                    width: fit-content;
+                    font-size: 14px;
+                }
+
+                p:nth-child(2) {
+                    padding-right: 6px;
+                    padding-left: 6px;
+                }
+
+            }
+
+            .social {
+
+                .socialIcon {
+                    padding: 12px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        .bottom {
+            padding-top: 16px;
+
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }

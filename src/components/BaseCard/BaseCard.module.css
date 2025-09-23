@@ -11,3 +11,10 @@
         border-radius: 10px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .baseCard {
+        box-shadow: 4px 4px 0px 1px rgba(30, 30, 30, 1);
+        border-radius: 10px;
+    }
+}

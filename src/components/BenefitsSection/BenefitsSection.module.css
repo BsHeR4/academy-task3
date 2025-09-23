@@ -5,3 +5,10 @@
     row-gap: 75px;
     column-gap: 40px;
 }
+
+@media screen and (max-width: 992px) {
+    .benefitCards {
+        grid-template-columns: 1fr;
+        row-gap: calc(68px + 28px);
+    }
+}

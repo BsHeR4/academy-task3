@@ -10,3 +10,11 @@
         gap: 40px;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .pages {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

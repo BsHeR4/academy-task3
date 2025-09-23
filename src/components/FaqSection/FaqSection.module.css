@@ -22,3 +22,16 @@
         gap: 40px;
     }
 }
+
+@media screen and (max-width: 992px) {
+
+    .accordions {
+        row-gap: 20px;
+    }
+
+    .accordionsContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

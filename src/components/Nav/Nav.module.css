@@ -4,6 +4,10 @@
     background-color: rgba(255, 245, 240, 1);
 }
 
+.menu {
+    display: none;
+}
+
 .container {
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(38, 38, 38, 1);
@@ -31,4 +35,37 @@
         }
 
     }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .nav {
+        padding-left: 17px;
+        padding-right: 17px;
+        background-color: rgba(255, 245, 240, 1);
+    }
+
+    .logo {
+        padding: 16px 20px;
+        img {
+            max-width: 137.2px;
+            max-height: 30px;
+        }
+
+    }
+
+    .navItems {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+
+        .menuIcon {
+            font-size: 28px;
+        }
+    }
+
+
 }

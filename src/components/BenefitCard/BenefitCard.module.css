@@ -56,3 +56,30 @@
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .benefitCard {
+        padding: 50px 40px 30px 30px;
+    }
+
+    .iconBox {
+        padding: 16px;
+        left: 24px;
+        border-radius: 8px;
+
+        img {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+
+    .cardTitle {
+        padding-bottom: 16px;
+        font-size: 22px;
+    }
+
+    .cardDescription {
+        font-size: 16px;
+    }
+
+}

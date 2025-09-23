@@ -12,11 +12,11 @@ function App() {
 
   return (
     <>
-      <Banner text={'Admission is Open, Grab your seat now'} />
-      <Nav />
-      <Hero />
-      <BenefitsSection />
-      <TestimonialsSection />
+        <Banner text={'Admission is Open, Grab your seat now'} />
+        <Nav />
+        <Hero />
+        <BenefitsSection />
+      {/* <TestimonialsSection /> */}
       <FaqSection />
       <PagesSection />
       <Footer />

@@ -92,3 +92,25 @@
         font-size: 16px;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+
+    .pageCard {
+        padding: 40px;
+    }
+
+    .pageCardTitle {
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .shapesContainer {
+        padding-bottom: 30px;
+    }
+
+    .pageCardDescription {
+        padding-bottom: 40px;
+        font-size: 16px;
+    }
+}

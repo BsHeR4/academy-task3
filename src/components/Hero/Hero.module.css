@@ -39,14 +39,12 @@
     padding-bottom: 30px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
-    font-style: ExtraBold;
     font-size: 53px;
     line-height: 130%;
 
     span {
         font-family: "Raleway", sans-serif;
         font-weight: 800;
-        font-style: ExtraBold;
         font-size: 53px;
         line-height: 130%;
         color: rgba(255, 141, 77, 1);
@@ -90,10 +88,36 @@
     }
 }
 
-@media screen and (max-width: 992px) 
-{
+@media screen and (max-width: 992px) {
     .hero {
+        height: auto;
         flex-direction: column;
+        padding-top: 50px;
+        gap: 40px;
+    }
+
+    .rightColumn {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .welcomeStatment {
+        font-size: 16px;
+    }
+
+    .rightColumn h1 {
+        padding-bottom: 18px;
+        font-size: 30px;
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    .rightColumn p {
+        font-size: 16px;
     }
 
 }
