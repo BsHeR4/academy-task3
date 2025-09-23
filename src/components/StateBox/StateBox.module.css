@@ -1,0 +1,34 @@
+.container {
+    padding: 24px 50px;
+    background-color: rgba(255, 239, 229, 1);
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px 1px rgba(255, 190, 153, 1);
+
+    span {
+        font-weight: 800;
+        font-style: ExtraBold;
+        font-size: 44px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .container {
+        padding: 20px 40px;
+        box-shadow: 6px 6px 0px 1px rgba(255, 190, 153, 1);
+
+        span {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+}

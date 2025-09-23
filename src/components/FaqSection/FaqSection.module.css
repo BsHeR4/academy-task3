@@ -1,0 +1,24 @@
+.accordions {
+    width: 100%;
+    display: grid;
+    align-items: start;
+    justify-items: stretch;
+    row-gap: 30px;
+    align-content: start;
+}
+
+.accordionsContainer {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .accordions {
+        row-gap: 24px;
+    }
+
+    .accordionsContainer {
+        gap: 40px;
+    }
+}

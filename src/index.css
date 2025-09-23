@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.whiteSpacing {
+  padding-left: 8.47vw;
+  padding-right: 8.47vw;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+  .whiteSpacing {
+    padding-left: 5.5555vw;
+    padding-right: 5.5555vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .whiteSpacing {
+    padding-left: 0.8854vw;
+    padding-right: 0.8854vw;
+  }
+}

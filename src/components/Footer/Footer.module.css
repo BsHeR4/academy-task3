@@ -1,0 +1,205 @@
+.footer {
+    padding: 200px 50px 50px 50px;
+    background-color: rgba(255, 245, 240, 1);
+
+    .footerCard {
+        padding: 100px 113px 40px 113px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+            padding-bottom: 50px;
+
+            .leftColumn {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .logo {
+                    p {
+                        max-width: 519px;
+                        padding-top: 20px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: rgba(76, 76, 77, 1);
+                    }
+                }
+
+                .contacts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 29px;
+
+                    .contact {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        .contactIcon {
+                            padding: 8px;
+                            font-size: 24px;
+                            background-color: rgba(255, 245, 240, 1);
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .middle {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgba(38, 38, 38, 1);
+        border-bottom: 1px solid rgba(38, 38, 38, 1);
+
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            p {
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            p:nth-child(2) {
+                padding-right: 16px;
+                padding-left: 16px;
+                border-left: 2px solid rgba(38, 38, 38, 1);
+                border-right: 2px solid rgba(38, 38, 38, 1);
+            }
+
+        }
+
+        .social {
+            display: flex;
+            gap: 14px;
+
+            .socialIcon {
+                padding: 16px;
+                font-size: 24px;
+                background-color: rgba(255, 222, 204, 1);
+            }
+        }
+
+    }
+
+    .bottom {
+        padding-top: 30px;
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            color: rgba(101, 101, 103, 1);
+        }
+    }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .footer {
+        padding-top: 150px;
+
+        .footerCard {
+            padding: 80px 80px 40px 80px;
+
+            .top {
+                padding-bottom: 40px;
+
+                .leftColumn {
+                    gap: 40px;
+
+                    .logo {
+
+                        img {
+                            max-width: 182.69px;
+                            max-height: 40px;
+                        }
+
+                        p {
+                            max-width: 393px;
+                            padding-top: 16px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .contacts {
+                        gap: 20px;
+
+                        .contact {
+                            gap: 8px;
+
+                            .contactIcon {
+                                padding: 6px;
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+        .middle {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .terms {
+                gap: 10px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                p:nth-child(2) {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+
+            }
+
+            .social {
+
+                .socialIcon {
+                    padding: 14px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        .bottom {
+            padding-top: 20px;
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding-top: 80px;
+    }
+}

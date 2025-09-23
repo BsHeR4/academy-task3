@@ -1,0 +1,39 @@
+.navItem {
+    padding: 25px 34px;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid rgba(38, 38, 38, 1);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.active {
+    background-color: rgba(255, 174, 128, 1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 239, 229, 1);
+}
+
+.active:hover {
+    background-color: rgba(255, 175, 128, 0.877);
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+
+    .navItem {
+        padding: 21px 30px;
+        font-size: 16px;
+    }
+
+}

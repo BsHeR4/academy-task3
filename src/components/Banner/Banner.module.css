@@ -1,0 +1,131 @@
+.container {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 245, 240, 1);
+}
+
+.banner {
+    text-align: center;
+    background-color: rgba(255, 222, 204, 1);
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-radius: 8px;
+    height: 100%;
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        padding-right: 14px;
+    }
+}
+
+.content {
+    display: flex;
+}
+
+.arrow {
+    font-size: 30px;
+}
+
+.innerContainer {
+    justify-content: center !important;
+    align-self: center;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.rightAb {
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+.leftAb {
+    position: absolute;
+    right: 100%;
+    bottom: 100%;
+    transform: translateY(70%);
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+    .banner {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .arrow {
+        font-size: 24px;
+    }
+
+    .rightAb {
+        transform: translateY(-55%);
+    }
+
+    .leftAb {
+        position: absolute;
+        right: 100%;
+        bottom: 100%;
+        transform: translateY(70%);
+    }
+
+    .leftImg {
+        content: url("/imgs/BannerAbstractDesignLeftMiddle.png");
+    }
+
+    .rightImg {
+        content: url("/imgs/BannerAbstractDesignRightMiddle.png");
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        padding: 52px 17px 14px 17px;
+    }
+
+    .content {
+        min-width: max-content;
+    }
+
+    .banner {
+
+        p {
+            padding-right: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .rightAb {
+        content: url("/imgs/BannerAbstractCircleRightMobile.png");
+        left: 135%;
+        top: 110%;
+        transform: translateX(100%, -55%);
+    }
+
+    .leftAb {
+        max-width: 32.5617px;
+        right: 125%;
+        bottom: 140%;
+        transform: translateY(70%);
+    }
+
+    .leftImg {
+        content: url("/imgs/BannerAbstractDesignLeftMobile.png");
+    }
+
+    .rightImg {
+        content: url("/imgs/BannerAbstractDesignRightMobile.png");
+    }
+
+}
