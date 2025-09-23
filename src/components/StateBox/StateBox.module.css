@@ -47,6 +47,11 @@
             border-bottom: 2px solid rgba(38, 38, 38, 1);
         }
 
+        .item:last-child {
+            border: none;
+            padding-bottom: 0px;
+        }
+
         span {
             font-size: 34px;
         }
