@@ -1,11 +1,13 @@
 import Container from '../Container/Container'
 import styles from './IconButton.module.css'
 
-const IconButton = ({ icon, className }) => {
+const IconButton = ({ icon, className, onClick }) => {
     return (
-        <Container className={`${styles.iconButton} ${className}`}>
-            {icon}
-        </Container>
+        <div onClick={onClick}>
+            <Container className={`${styles.iconButton} ${className}`}>
+                {icon}
+            </Container>
+        </div>
     )
 }
 

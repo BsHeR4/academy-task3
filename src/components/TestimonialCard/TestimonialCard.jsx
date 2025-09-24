@@ -4,7 +4,7 @@ import Container from '../Container/Container'
 
 const TestimonialCard = ({ avatar, name, comment, className }) => {
     return (
-        <BaseCard className={styles.testimonialCard}>
+        <BaseCard className={`${styles.testimonialCard} ${className}`}>
             <div className={`${styles.avatar}`}>
                 <img src={avatar} alt="" />
             </div>

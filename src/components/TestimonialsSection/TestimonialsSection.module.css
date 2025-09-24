@@ -1,3 +1,63 @@
 .arrowButton {
     align-self: center;
 }
+
+.cards {
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 10px;
+}
+
+.card {
+    min-width: calc(100% / 3 - 30px);
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    bottom: 50%;
+    transform: translateY(100%);
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .slider {
+        gap: 40px;
+    }
+
+    .slides {
+        justify-content: center;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        min-width: calc(100% - 29px);
+    }
+
+    .buttons {
+        transform: translateY(0%);
+        position: relative;
+        justify-content: center;
+        gap: 20px;
+    }
+}

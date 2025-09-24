@@ -38,7 +38,7 @@ li:hover {
 
 @media screen and (min-width: 993px) and (max-width: 1919px) {
 
-    li {
+   .navItem li {
         padding: 21px 30px;
     }
 

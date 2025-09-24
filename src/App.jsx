@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <Hero />
         <BenefitsSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <FaqSection />
       <PagesSection />
       <Footer />
