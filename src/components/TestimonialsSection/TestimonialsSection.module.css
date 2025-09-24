@@ -1,9 +1,10 @@
 .arrowButton {
     align-self: center;
+    cursor: pointer;
 }
 
 .cards {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
 }
 

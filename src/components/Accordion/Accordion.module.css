@@ -5,6 +5,7 @@
     border: 2px solid rgba(38, 38, 38, 1);
     border-radius: 12px;
     background-color: rgba(255, 239, 229, 1);
+    transition: background-color 0.4s ease-in-out;
 
     .accordionHeader {
         display: flex;
@@ -26,13 +27,22 @@
             align-self: center;
             font-size: 24px;
             background-color: rgba(255, 245, 240, 1);
+            cursor: pointer;
         }
     }
 
     .accordionContent {
 
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-in-out;
+
+        .contentWrapper {
+            overflow: hidden;
+        }
+
+
         p {
-            display: none;
             max-width: 621px;
             padding-top: 24px;
             margin-top: 24px;
@@ -49,6 +59,8 @@
     background-color: rgba(255, 255, 255, 1);
 
     .accordionContent {
+        grid-template-rows: 1fr;
+
         p {
             display: block;
         }
