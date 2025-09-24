@@ -1,8 +1,7 @@
 import styles from './Nav.module.css'
 import Container from '../Container/Container'
 import NavItem from '../NavItem/NavItem'
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-
+import Drawer from '../Drawer/Drawer';
 const navItems = ['Home', 'About Us', 'Academics', 'Admissions', 'Student Life'];
 
 const Nav = () => {
@@ -16,9 +15,7 @@ const Nav = () => {
                     <NavItem navItems={navItems} />
                     <NavItem navItems={['Contact']} active={true} />
                 </Container>
-                <div className={styles.menu}>
-                    <NavItem navItems={[<HiOutlineMenuAlt3 className={styles.menuIcon} />]} menu={true} />
-                </div>
+                <Drawer navItems={navItems} className={styles.drawer} />
             </Container>
         </nav>
     )
