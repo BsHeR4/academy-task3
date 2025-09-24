@@ -134,3 +134,14 @@
     }
 
 }
+
+@media screen and (max-width: 400px) {
+    .banner {
+
+        p {
+            padding-right: 5px;
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+}

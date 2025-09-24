@@ -5,6 +5,7 @@
 }
 
 .drawer {
+    min-height: 100%;
     display: none;
 }
 
@@ -28,6 +29,20 @@
 
     .logo {
         padding: 16px 20px;
+
+        img {
+            max-width: 155.2893px;
+            max-height: 34px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1170px) {
+
+    .logo {
+        padding: 14px 16px;
 
         img {
             max-width: 155.2893px;
@@ -70,4 +85,14 @@
 
 
 
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        padding: 14px 18px;
+
+        img {
+            max-width: 120.2px;
+        }
+    }
 }

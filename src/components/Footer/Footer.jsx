@@ -9,7 +9,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ footerData }) => {
     return (
         <footer className={styles.footer}>
             <BaseCard className={styles.footerCard}>
@@ -17,20 +17,20 @@ const Footer = () => {
                     <div className={styles.leftColumn}>
                         <div className={styles.logo}>
                             <img src="/imgs/Logo.svg" alt="" />
-                            <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+                            <p>{footerData.ourVision}</p>
                         </div>
                         <div className={styles.contacts} >
                             <div className={styles.contact}>
                                 <IconButton className={styles.contactIcon} icon={<TbMailFilled />} />
-                                <p>hello@littlelearners.com</p>
+                                <p>{footerData.contact.email}</p>
                             </div>
                             <div className={styles.contact}>
                                 <IconButton className={styles.contactIcon} icon={<HiPhone />} />
-                                <p>+91 91813 23 2309</p>
+                                <p>{footerData.contact.phone}</p>
                             </div>
                             <div className={styles.contact}>
                                 <IconButton className={styles.contactIcon} icon={<HiMapPin />} />
-                                <p>Somewhere in the World</p>
+                                <p>{footerData.contact.location}</p>
                             </div>
                         </div>
                     </div>

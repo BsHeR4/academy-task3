@@ -5,6 +5,10 @@
     border-radius: 12px;
     box-shadow: 8px 8px 0px 1px rgba(255, 190, 153, 1);
 
+    .item {
+        text-align: center;
+    }
+
     span {
         font-weight: 800;
         font-style: ExtraBold;

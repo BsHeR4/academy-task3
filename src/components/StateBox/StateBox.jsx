@@ -1,21 +1,17 @@
 import Container from "../Container/Container"
 import styles from "./StateBox.module.css"
 
-const StateBox = () => {
+const StateBox = ({ stats }) => {
     return (
         <Container className={styles.container}>
-            <div className={styles.item}>
-                <span>+7000</span>
-                <p>Students Passed Out</p>
-            </div>
-            <div className={styles.item}>
-                <span>+37</span>
-                <p>Awards & Recognitions</p>
-            </div>
-            <div className={styles.item}>
-                <span>+15</span>
-                <p>Experience Educators</p>
-            </div>
+            {stats.map((stat, index) => {
+                return (
+                    <div className={styles.item} key={index}>
+                        <span>{stat.number}</span>
+                        <p>{stat.label}</p>
+                    </div>
+                );
+            })}
         </Container>
     )
 }

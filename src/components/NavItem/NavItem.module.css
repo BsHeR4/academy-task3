@@ -1,6 +1,7 @@
 .navItem {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 20px;
     list-style: none;
@@ -13,13 +14,16 @@
 }
 
 .navItem li {
+    display: flex;
+    align-items: center;
     height: 100%;
     padding: 25px 34px;
     border-left: 2px solid rgba(38, 38, 38, 1);
     cursor: pointer;
+    text-align: center;
 }
 
-li:hover {
+.navItem li:hover {
     background-color: rgba(255, 239, 229, 1);
 }
 
@@ -38,12 +42,24 @@ li:hover {
 
 @media screen and (min-width: 993px) and (max-width: 1919px) {
 
-   .navItem li {
+    .navItem li {
         padding: 21px 30px;
     }
 
     .navItem {
         font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1170px) {
+
+    .navItem li {
+        padding: 18px 24px;
+    }
+
+    .navItem {
+        font-size: 14px;
     }
 
 }

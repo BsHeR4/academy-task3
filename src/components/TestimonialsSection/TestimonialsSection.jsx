@@ -6,35 +6,7 @@ import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";
 import IconButton from '../IconButton/IconButton';
 import { useEffect, useState } from 'react';
 
-const testimonialsData = [
-    {
-        avatar: "/imgs/avatar1.png",
-        name: 'Jennifer B',
-        comment: "Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!"
-    },
-    {
-        avatar: "/imgs/avatar1.png",
-        name: 'David K',
-        comment: "Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment."
-    },
-    {
-        avatar: "/imgs/avatar1.png",
-        name: 'Emily S',
-        comment: "My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers."
-    },
-    {
-        avatar: "/imgs/avatar1.png",
-        name: 'Sarah L',
-        comment: "My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers."
-    },
-    {
-        avatar: "/imgs/avatar1.png",
-        name: 'Michael P',
-        comment: "My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers."
-    }
-];
-
-const TestimonialsSection = () => {
+const TestimonialsSection = ({ testimonialsData }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(3);
@@ -68,14 +40,14 @@ const TestimonialsSection = () => {
 
     return (
         <Section
-            boxTitle={'Their Happy Words 🤗'}
-            title={'Our Testimonials'}
-            description={"Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."}
+            boxTitle={testimonialsData.pillTitle}
+            title={testimonialsData.title}
+            description={testimonialsData.description}
         >
             <Container className={styles.slider}>
                 <div className={styles.cards}>
                     <div className={styles.slides} style={{ transform: `translateX(-${currentIndex * movementPercentage}%)` }}>
-                        {testimonialsData.map((testimonial, index) => (
+                        {testimonialsData.items.map((testimonial, index) => (
                             <TestimonialCard
                                 key={index}
                                 avatar={testimonial.avatar}

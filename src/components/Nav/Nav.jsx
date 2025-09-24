@@ -2,9 +2,8 @@ import styles from './Nav.module.css'
 import Container from '../Container/Container'
 import NavItem from '../NavItem/NavItem'
 import Drawer from '../Drawer/Drawer';
-const navItems = ['Home', 'About Us', 'Academics', 'Admissions', 'Student Life'];
 
-const Nav = () => {
+const Nav = ({ navItems }) => {
     return (
         <nav className={styles.nav}>
             <Container className={styles.container}>

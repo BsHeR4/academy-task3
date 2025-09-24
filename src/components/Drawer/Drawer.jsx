@@ -13,15 +13,15 @@ const Drawer = ({ navItems, className }) => {
     }
 
     return (
-        <div>
+        <div className={className}>
             <div className={styles.menu}>
                 <NavItem onClick={ActivateDrawer} navItems={[<HiOutlineMenuAlt3 className={styles.menuIcon} />]} menu={true} />
             </div>
             <div className={`${styles.draw} ${isActive && styles.active}`}>
                 <IoMdClose onClick={ActivateDrawer} className={styles.closeIcon} />
                 <ul className={`${styles.darwItems}`}>
-                    {navItems.map((item) => (
-                        <li className={styles.item}>{item}</li>
+                    {navItems.map((item, index) => (
+                        <li key={index} className={styles.item}>{item}</li>
                     ))}
                 </ul>
             </div>
