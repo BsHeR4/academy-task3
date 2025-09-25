@@ -27,13 +27,13 @@ const TestimonialsSection = ({ testimonialsData }) => {
     }, []);
 
     const goToNext = () => {
-        const isLastSlide = currentIndex >= testimonialsData.length - slidesToShow;
+        const isLastSlide = currentIndex >= testimonialsData.items.length - slidesToShow;
         setCurrentIndex(isLastSlide ? 0 : currentIndex + 1);
     };
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
-        setCurrentIndex(isFirstSlide ? testimonialsData.length - slidesToShow : currentIndex - 1);
+        setCurrentIndex(isFirstSlide ? testimonialsData.items.length - slidesToShow : currentIndex - 1);
     };
 
     const movementPercentage = 100 / slidesToShow;
