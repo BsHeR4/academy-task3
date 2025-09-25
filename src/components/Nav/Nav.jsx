@@ -8,7 +8,7 @@ const Nav = ({ navItems }) => {
         <nav className={styles.nav}>
             <Container className={styles.container}>
                 <div className={styles.logo}>
-                    <img src="/imgs/Logo.svg" alt="" />
+                    <img src="imgs/Logo.svg" alt="" />
                 </div>
                 <Container className={styles.navItems}>
                     <NavItem navItems={navItems} />

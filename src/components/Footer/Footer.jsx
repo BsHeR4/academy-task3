@@ -16,7 +16,7 @@ const Footer = ({ footerData }) => {
                 <div className={styles.top}>
                     <div className={styles.leftColumn}>
                         <div className={styles.logo}>
-                            <img src="/imgs/Logo.svg" alt="" />
+                            <img src="imgs/Logo.svg" alt="" />
                             <p>{footerData.ourVision}</p>
                         </div>
                         <div className={styles.contacts} >
