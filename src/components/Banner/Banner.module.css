@@ -79,11 +79,11 @@
     }
 
     .leftImg {
-        content: url("imgs/BannerAbstractDesignLeftMiddle.png");
+        content: url("/imgs/BannerAbstractDesignLeftMiddle.png");
     }
 
     .rightImg {
-        content: url("imgs/BannerAbstractDesignRightMiddle.png");
+        content: url("/imgs/BannerAbstractDesignRightMiddle.png");
     }
 
 }
@@ -112,7 +112,7 @@
     }
 
     .rightAb {
-        content: url("imgs/BannerAbstractCircleRightMobile.png");
+        content: url("/imgs/BannerAbstractCircleRightMobile.png");
         left: 100%;
         bottom: 100%;
         transform: translate(-100%, -100%);
@@ -126,11 +126,11 @@
     }
 
     .leftImg {
-        content: url("imgs/BannerAbstractDesignLeftMobile.png");
+        content: url("/imgs/BannerAbstractDesignLeftMobile.png");
     }
 
     .rightImg {
-        content: url("imgs/BannerAbstractDesignRightMobile.png");
+        content: url("/imgs/BannerAbstractDesignRightMobile.png");
     }
 
 }
