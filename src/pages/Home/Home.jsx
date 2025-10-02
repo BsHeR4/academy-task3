@@ -1,5 +1,3 @@
-import Banner from '../../components/Banner/Banner'
-import Nav from '../../components/Nav/Nav'
 import Hero from '../../components/Hero/Hero'
 import BenefitsSection from '../../components/BenefitsSection/BenefitsSection'
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection'
@@ -13,8 +11,6 @@ const Home = () => {
     return (
         <>
             <header>
-                <Banner text={'Admission is Open, Grab your seat now'} />
-                <Nav navItems={pageData.navItems} />
                 <Hero heroData={pageData.hero} />
             </header>
             <main>

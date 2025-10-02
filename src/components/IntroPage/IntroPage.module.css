@@ -1,0 +1,153 @@
+.IntroPageCard {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 120px;
+}
+
+.IntroPage {
+    padding: 60px 50px;
+    background-color: rgba(255, 245, 240, 1);
+}
+
+.shape {
+    position: relative;
+    width: 50.01px;
+    height: 49.99px;
+    background-color: rgba(255, 190, 153, 1);
+}
+
+.shape::before {
+    position: absolute;
+    content: '';
+    left: 100%;
+    bottom: 0%;
+    transform: translate(-99%, 2%);
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    background-color: #fff;
+}
+
+.shape::after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    transform: translate(99%, 0%);
+    width: 50%;
+    height: 51.5%;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%);
+    background-color: #fff;
+}
+
+.blackBox {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    height: 51.5%;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    width: min-content;
+}
+
+.shapeContainer {
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    transform: translate(100%, 100%);
+    width: min-content;
+    height: min-content;
+}
+
+.content {
+    align-items: center;
+    gap: 50px;
+
+    h2 {
+        padding-top: 14px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 130%;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        max-width: 765px;
+        color: rgba(51, 51, 51, 1);
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .IntroPageCard {
+        padding: 100px 80px;
+    }
+
+    .IntroPage {
+        padding: 40px 80px;
+    }
+
+    .shape {
+        width: 34.24px;
+        height: 34.26px;
+    }
+
+    .content {
+
+        h2 {
+            padding-top: 10px;
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 535px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .IntroPageCard {
+        padding: 50px 30px;
+    }
+
+    .IntroPage {
+        padding: 40px 16px;
+        background-color: rgba(255, 245, 240, 1);
+    }
+
+    .content {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            padding-top: 10px;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 298px;
+        }
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shape {
+        width: 25px;
+        height: 25px;
+    }
+}
