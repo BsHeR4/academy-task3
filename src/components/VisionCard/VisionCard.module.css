@@ -1,0 +1,81 @@
+.visionCard {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 130%;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+
+    .visionCard {
+        padding: 50px;
+        gap: 50px;
+
+        .head {
+
+            h2 {
+                font-size: 38px;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .visionCard {
+        padding: 40px;
+        gap: 40px;
+
+        .head {
+
+            h2 {
+                font-size: 30px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+}

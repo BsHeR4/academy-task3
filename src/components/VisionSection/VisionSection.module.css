@@ -1,0 +1,19 @@
+.cardsContainer {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .cardsContainer {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .cardsContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
