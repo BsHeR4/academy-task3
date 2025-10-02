@@ -1,9 +1,9 @@
 import BaseCard from '../BaseCard/BaseCard'
 import styles from './BenefitCard.module.css'
 
-const BenefitCard = ({ icon, title, description }) => {
+const BenefitCard = ({ icon, title, description, className }) => {
     return (
-        <BaseCard className={styles.benefitCard}>
+        <BaseCard className={`${styles.benefitCard} ${className}`}>
             <div className={styles.iconBox}>
                 <img src={icon} alt={`${title} icon`} />
             </div>

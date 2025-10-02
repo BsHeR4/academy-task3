@@ -1,0 +1,114 @@
+.recognitionCards {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    min-width: calc(100% / 3 - 39px);
+}
+
+.sliderController {
+    padding-right: 29px;
+    padding-top: 50px;
+    align-items: center;
+    width: 100%;
+
+    p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .buttons {
+
+        display: flex;
+        gap: 20px;
+
+        .arrowButton {
+            align-self: center;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+    .recognitionCards {
+        padding-top: 30px;
+    }
+
+    .slides {
+        gap: 30px;
+    }
+
+    .card {
+        min-width: calc(100% / 3 - 29px);
+    }
+
+    .sliderController {
+        padding-top: 40px;
+
+        p {
+            font-size: 18px;
+        }
+
+        .buttons {
+            gap: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .recognitionCards {
+        padding-top: 30px;
+    }
+
+    .slides {
+        gap: 7px;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        min-width: calc(100% - 7px);
+    }
+
+    .sliderController {
+        padding-right: 7px;
+        padding-top: 30px;
+
+        p {
+            font-size: 18px;
+        }
+
+        .buttons {
+            gap: 16px;
+        }
+    }
+}

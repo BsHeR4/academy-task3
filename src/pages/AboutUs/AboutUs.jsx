@@ -1,4 +1,5 @@
 import IntroPage from '../../components/IntroPage/IntroPage'
+import RecognitionSection from '../../components/RecognitionSection/RecognitionSection'
 import VisionSection from '../../components/VisionSection/VisionSection'
 import styles from './AboutUs.module.css'
 
@@ -7,6 +8,7 @@ const AboutUs = () => {
         <div>
             <IntroPage></IntroPage>
             <VisionSection></VisionSection>
+            <RecognitionSection />
         </div>
     )
 }
