@@ -2,12 +2,7 @@ import styles from './IntroPage.module.css'
 import BaseCard from './../BaseCard/BaseCard'
 import Container from './../Container/Container'
 import SectionBoxHeader from './../SectionBoxHeader/SectionBoxHeader'
-
-const Shape = () => (
-    <div className={styles.shape}>
-        <div className={styles.blackBox}></div>
-    </div>
-);
+import CubeShape from './../CubeShape/CubeShape'
 
 const IntroPage = () => {
     const layout = [4, 3, 2, 1];
@@ -19,7 +14,7 @@ const IntroPage = () => {
                     {layout.map((numberOfShapes, rowIndex) => (
                         <div key={rowIndex} className={styles.container}>
                             {Array.from({ length: numberOfShapes }).map((_, shapeIndex) => (
-                                <Shape key={shapeIndex} />
+                                <CubeShape key={shapeIndex}/>
                             ))}
                         </div>
                     ))}

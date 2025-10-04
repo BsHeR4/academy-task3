@@ -1,0 +1,57 @@
+.historySection {
+    padding: 150px;
+}
+
+.period {
+    display: flex;
+    gap: 50px;
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(51, 51, 51, 1);
+    }
+}
+
+.timeLine {
+    padding-left: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+
+    .historySection {
+        padding: 100px;
+    }
+
+    .period {
+        gap: 40px;
+
+        h2 {
+            padding-bottom: 16px;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .timeLine {
+        padding-left: 73px;
+        gap: 84.5px;
+    }
+
+}

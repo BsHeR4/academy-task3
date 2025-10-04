@@ -1,3 +1,4 @@
+import HistorySection from '../../components/HistorySection/HistorySection'
 import IntroPage from '../../components/IntroPage/IntroPage'
 import RecognitionSection from '../../components/RecognitionSection/RecognitionSection'
 import VisionSection from '../../components/VisionSection/VisionSection'
@@ -9,6 +10,7 @@ const AboutUs = () => {
             <IntroPage></IntroPage>
             <VisionSection></VisionSection>
             <RecognitionSection />
+            <HistorySection />
         </div>
     )
 }

@@ -1,0 +1,127 @@
+.yearCardContainer {
+    position: relative;
+    padding: 30.34px 50px;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    gap: 20px;
+    height: min-content;
+
+    .container {
+        display: flex;
+    }
+
+    .year {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 68px;
+    }
+}
+
+.circle {
+    position: absolute;
+    flex-shrink: 0;
+    right: 100%;
+    transform: translateX(50%);
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-radius: 50%;
+}
+
+.innerCircle {
+    position: absolute;
+    flex-shrink: 0;
+    right: 100%;
+    /* bottom: 100%; */
+    transform: translate(90%, -20%);
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-radius: 50%;
+}
+
+.verticalRectangular {
+    position: absolute;
+    right: 100%;
+    width: 95px;
+    height: 12px;
+    background: rgba(255, 190, 153, 1);
+}
+
+.verticalRectangular::after {
+    position: absolute;
+    content: '';
+    bottom: 50%;
+    width: 90%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.bottomHorizentalRectangular {
+    position: absolute;
+    top: 43%;
+    width: 12px;
+    height: 244px;
+    background: rgba(255, 190, 153, 1);
+}
+
+.hideBottomHorizentalRectangular {
+    display: none;
+}
+
+.hideTopHorizentalRectangular {
+    display: none;
+}
+
+.topHorizentalRectangular {
+    position: absolute;
+    bottom: -30%;
+    width: 12px;
+    height: 200px;
+    background: rgba(255, 190, 153, 1);
+}
+
+.topHorizentalRectangular::after {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    right: 50%;
+    height: 100%;
+    transform: translate(50%, 100%);
+    width: 2px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.bottomHorizentalRectangular::after {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    right: 50%;
+    height: 100%;
+    transform: translate(50%, 100%);
+    width: 2px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .yearCardContainer {
+        padding: 25px 34px;
+
+        .year {
+            font-size: 48px;
+        }
+    }
+
+    .bottomHorizentalRectangular {
+        height: 194.5px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {}

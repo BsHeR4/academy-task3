@@ -1,0 +1,85 @@
+.cube {
+    position: relative;
+
+    &.blackCube {
+        width: 50.01px;
+        height: 49.99px;
+        background-color: rgba(255, 190, 153, 1);
+    }
+
+    &.orangeCube {
+        width: 29.1px;
+        height: 29.1px;
+        background-color: rgba(255, 222, 204, 1);
+    }
+}
+
+.cube::before {
+    position: absolute;
+    content: '';
+    left: 100%;
+    bottom: 0%;
+    transform: translate(-99%, 2%);
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    background-color: #fff;
+}
+
+.cube::after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    transform: translate(99%, 0%);
+    width: 50%;
+    height: 51.5%;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%);
+    background-color: #fff;
+}
+
+.box {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    height: 51.5%;
+
+
+    &.blackCube {
+        background-color: #000;
+    }
+
+    &.orangeCube {
+        background-color: rgba(255, 141, 77, 1);
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .cube {
+        &.blackCube {
+            width: 34.24px;
+            height: 34.26px;
+        }
+
+        &.orangeCube {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .cube {
+        &.blackCube {
+            width: 25px;
+            height: 25px;
+        }
+
+        &.orangeCube {
+            width: 16.66px;
+            height: 16.66px;
+        }
+    }
+}
