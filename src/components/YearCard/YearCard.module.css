@@ -124,4 +124,26 @@
 
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+
+    .yearCardContainer {
+        padding: 20.5px 24px;
+
+        .year {
+            font-size: 38px;
+        }
+    }
+
+    .verticalRectangular {
+        width: 62px;
+    }
+
+    .bottomHorizentalRectangular {
+        height: 270px;
+    }
+
+    .topHorizentalRectangular {
+        height: 250px;
+    }
+
+}
