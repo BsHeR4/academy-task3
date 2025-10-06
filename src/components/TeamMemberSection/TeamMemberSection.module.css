@@ -1,0 +1,22 @@
+.teamCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+    .teamCards {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .teamCards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+}

@@ -2,6 +2,7 @@ import HistorySection from '../../components/HistorySection/HistorySection'
 import IntroPage from '../../components/IntroPage/IntroPage'
 import RecognitionSection from '../../components/RecognitionSection/RecognitionSection'
 import VisionSection from '../../components/VisionSection/VisionSection'
+import TeamMemberSection from '../../components/TeamMemberSection/TeamMemberSection'
 import styles from './AboutUs.module.css'
 
 const AboutUs = () => {
@@ -11,6 +12,7 @@ const AboutUs = () => {
             <VisionSection></VisionSection>
             <RecognitionSection />
             <HistorySection />
+            <TeamMemberSection />
         </div>
     )
 }
