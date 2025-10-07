@@ -1,0 +1,98 @@
+.studentLearnSection {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+
+    img {
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba(76, 76, 77, 1);
+    }
+}
+
+.studentLearnSection::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+    background-color: rgba(255, 239, 229, 1);
+    width: 125px;
+    height: 70%;
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .studentLearnSection {
+        padding: 40px;
+
+        img {
+            padding-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding-bottom: 14px;
+            padding-top: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .studentLearnSection::after {
+        width: 103px;
+        height: 65%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .studentLearnSection {
+        padding: 30px;
+
+        img {
+            padding-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            padding-bottom: 10px;
+            padding-top: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .studentLearnSection::after {
+        width: 93px;
+        height: 65%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}

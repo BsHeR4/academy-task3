@@ -1,0 +1,19 @@
+.studentLearnCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .studentLearnCards {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .studentLearnCards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
