@@ -19,7 +19,6 @@ const Home = () => {
                 <FaqSection faqData={pageData.faq} />
                 <PagesSection pagesData={pageData.pages} />
             </main>
-            <Footer footerData={pageData.footer} />
         </>
     )
 }

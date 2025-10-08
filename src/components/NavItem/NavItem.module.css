@@ -33,15 +33,12 @@
     text-align: center;
 }
 
-.navItem li:hover {
+.navItem a:hover {
     background-color: rgba(255, 239, 229, 1);
-}
 
-.dark:hover {
-    border-start-end-radius: 10px;
-    border-end-end-radius: 10px;
-    background-color: rgb(239, 163, 120);
-
+    /* &.dark {
+        background-color: rgb(239, 163, 120);
+    } */
 }
 
 .menu {
