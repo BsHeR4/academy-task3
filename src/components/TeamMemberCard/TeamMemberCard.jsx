@@ -3,19 +3,19 @@ import BaseCard from '../BaseCard/BaseCard'
 import IconButton from '../IconButton/IconButton'
 import { IoIosMail } from "react-icons/io";
 
-const TeamMemberCard = () => {
+const TeamMemberCard = ({ profileImage, name, qualification, description }) => {
     return (
         <BaseCard className={styles.teamMemberCard}>
             <div className={styles.header}>
                 <div className={styles.memberInfo}>
-                    <img src="imgs/teamAvatar1.png" alt="" />
-                    <h2>Ms. Sarah Anderson</h2>
+                    <img src={profileImage} alt={name + "img"} />
+                    <h2>{name}</h2>
                 </div>
                 <IconButton icon={<IoIosMail />} className={styles.iconButton} />
             </div>
             <div className={styles.content}>
-                <h3>Qualification: Bachelor's Degree in Early Childhood Education</h3>
-                <p>Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn.</p>
+                <h3>{qualification}</h3>
+                <p>{description}</p>
             </div>
         </BaseCard>
     )

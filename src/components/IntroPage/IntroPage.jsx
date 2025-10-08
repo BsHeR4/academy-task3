@@ -4,7 +4,7 @@ import Container from './../Container/Container'
 import SectionBoxHeader from './../SectionBoxHeader/SectionBoxHeader'
 import CubeShape from './../CubeShape/CubeShape'
 
-const IntroPage = () => {
+const IntroPage = ({ boxTitle, title, description }) => {
     const layout = [4, 3, 2, 1];
 
     return (
@@ -14,17 +14,17 @@ const IntroPage = () => {
                     {layout.map((numberOfShapes, rowIndex) => (
                         <div key={rowIndex} className={styles.container}>
                             {Array.from({ length: numberOfShapes }).map((_, shapeIndex) => (
-                                <CubeShape key={shapeIndex}/>
+                                <CubeShape key={shapeIndex} />
                             ))}
                         </div>
                     ))}
                 </div>
                 <Container className={styles.content}>
                     <div className={styles.head}>
-                        <SectionBoxHeader>Overview</SectionBoxHeader>
-                        <h2>Welcome to Little Learners Academy</h2>
+                        <SectionBoxHeader>{boxTitle}</SectionBoxHeader>
+                        <h2>{title}</h2>
                     </div>
-                    <p>A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential.</p>
+                    <p>{description}</p>
                 </Container>
             </BaseCard>
         </div>
