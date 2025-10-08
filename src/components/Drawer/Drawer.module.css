@@ -4,6 +4,7 @@
 
 .menu {
     min-height: max-content !important;
+
 }
 
 .draw {
@@ -47,6 +48,12 @@
             border-bottom: none;
         }
     }
+
+
+    a {
+        text-decoration: none;
+        color: rgba(38, 38, 38, 1);
+    }
 }
 
 
@@ -57,4 +64,3 @@
 .active {
     right: 101%;
 }
-

@@ -20,12 +20,12 @@ export const aboutPageData = {
             {
                 title: "Mission",
                 description: "At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey.",
-                icon: "/academy-landing-page/imgs/missionIcon.svg"
+                icon: "/academy-task3/imgs/missionIcon.svg"
             },
             {
                 title: "Vision",
                 description: "Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.",
-                icon: "/academy-landing-page/imgs/visionIcon.svg"
+                icon: "/academy-task3/imgs/visionIcon.svg"
             }
         ]
     },
@@ -39,32 +39,32 @@ export const aboutPageData = {
         description: "Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students.",
         items: [
             {
-                icon: '/academy-landing-page/imgs/educationIcon.svg',
+                icon: '/academy-task3/imgs/educationIcon.svg',
                 title: 'Outstanding Early Childhood Education Awar',
                 description: "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
             },
             {
-                icon: '/academy-landing-page/imgs/steamIcon.svg',
+                icon: '/academy-task3/imgs/steamIcon.svg',
                 title: 'Innovative STEAM Education Award',
                 description: "Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners."
             },
             {
-                icon: '/academy-landing-page/imgs/stewardshipIcon.svg',
+                icon: '/academy-task3/imgs/stewardshipIcon.svg',
                 title: 'Environmental Stewardship Award',
                 description: "Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students."
             },
             {
-                icon: '/academy-landing-page/imgs/educationIcon.svg',
+                icon: '/academy-task3/imgs/educationIcon.svg',
                 title: 'Outstanding Early Childhood Education Awar',
                 description: "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
             },
             {
-                icon: '/academy-landing-page/imgs/steamIcon.svg',
+                icon: '/academy-task3/imgs/steamIcon.svg',
                 title: 'Innovative STEAM Education Award',
                 description: "Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners."
             },
             {
-                icon: '/academy-landing-page/imgs/stewardshipIcon.svg',
+                icon: '/academy-task3/imgs/stewardshipIcon.svg',
                 title: 'Environmental Stewardship Award',
                 description: "Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students."
             },
@@ -111,37 +111,37 @@ export const aboutPageData = {
         description: "At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.",
         members: [
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar1.png",
+                profileImage: "/academy-task3/imgs/teamAvatar1.png",
                 name: "Ms. Sarah Anderson",
                 qualification: "Qualification: Bachelor's Degree in Early Childhood Education",
                 description: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn.",
             },
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar2.png",
+                profileImage: "/academy-task3/imgs/teamAvatar2.png",
                 name: "Mr. David Roberts",
                 qualification: "Qualification: Master's Degree in Elementary Education",
                 description: "With a strong background in elementary education, Mr. David brings a creative and interactive teaching style to his classroom. His enthusiasm for learning inspires students to ask questions and think critically.",
             },
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar3.png",
+                profileImage: "/academy-task3/imgs/teamAvatar3.png",
                 name: "Ms. Emily Hernandez",
                 qualification: "Qualification: Diploma in Child Psychology",
                 description: "Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.",
             },
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar4.png",
+                profileImage: "/academy-task3/imgs/teamAvatar4.png",
                 name: "Mr. Michael Turner",
                 qualification: "Qualification: Bachelor's Degree in Physical Education",
                 description: "Mr. Michael's passion for physical fitness and sports shines through in his energetic classes. He encourages students to stay active, promoting teamwork and a healthy lifestyle.",
             },
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar5.png",
+                profileImage: "/academy-task3/imgs/teamAvatar5.png",
                 name: "Ms. Jessica Lee",
                 qualification: "Qualification: Master's Degree in Special Education",
                 description: "Ms. Jessica's specialization in special education allows her to create an inclusive and supportive learning environment for all students. She is dedicated to helping every child reach their full potential.",
             },
             {
-                profileImage: "/academy-landing-page/imgs/teamAvatar6.png",
+                profileImage: "/academy-task3/imgs/teamAvatar6.png",
                 name: "Mr. William Parker",
                 qualification: "Qualification: Bachelor's Degree in Fine Arts.",
                 description: "Mr. William's background in fine arts brings creativity and imagination to his classroom. Through art projects and activities, he nurtures the artistic expression and self-confidence of his students."

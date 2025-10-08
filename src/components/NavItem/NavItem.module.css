@@ -47,6 +47,10 @@
     border-bottom-right-radius: 10px;
 }
 
+.menu li {
+    border: none;
+}
+
 @media screen and (min-width: 993px) and (max-width: 1919px) {
 
     .navItem li {
@@ -71,7 +75,7 @@
 
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
 
 
 
@@ -81,4 +85,4 @@
 
 
 
-}
+} */

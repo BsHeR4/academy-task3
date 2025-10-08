@@ -16,7 +16,7 @@ const Drawer = ({ navItems, className }) => {
     return (
         <div className={className}>
             <div className={styles.menu}>
-                <NavItem onClick={ActivateDrawer} navItems={[<HiOutlineMenuAlt3 className={styles.menuIcon} />]} menu={true} />
+                <NavItem onClick={ActivateDrawer} navItems={[{ title: <HiOutlineMenuAlt3 className={styles.menuIcon} />, to: '#' }]} menu={true} />
             </div>
             <div className={`${styles.draw} ${isActive && styles.active}`}>
                 <IoMdClose onClick={ActivateDrawer} className={styles.closeIcon} />

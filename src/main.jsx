@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/academy-landing-page/'>
+    <BrowserRouter basename='/academy-task3/'>
       <Banner text={'Admission is Open, Grab your seat now'} />
       <Nav navItems={pageData.navItems} />
       <App />
