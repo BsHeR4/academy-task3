@@ -3,6 +3,7 @@ import styles from './Drawer.module.css'
 import { IoMdClose } from "react-icons/io";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Drawer = ({ navItems, className }) => {
 
@@ -21,7 +22,9 @@ const Drawer = ({ navItems, className }) => {
                 <IoMdClose onClick={ActivateDrawer} className={styles.closeIcon} />
                 <ul className={`${styles.darwItems}`}>
                     {navItems.map((item, index) => (
-                        <li key={index} className={styles.item}>{item}</li>
+                        <NavLink to={item.to}>
+                            <li key={index} className={styles.item}>{item.title}</li>
+                        </NavLink>
                     ))}
                 </ul>
             </div>

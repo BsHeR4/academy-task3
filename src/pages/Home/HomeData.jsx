@@ -5,11 +5,26 @@ export const pageData = {
     // ===================================
     navItems:
         [
-            'Home',
-            'About Us',
-            'Academics',
-            'Admissions',
-            'Student Life',
+            {
+                title: 'Home',
+                to: '/',
+            },
+            {
+                title: 'About Us',
+                to: '/about-us',
+            },
+            {
+                title: 'Academics',
+                to: '/academics',
+            },
+            {
+                title: 'Admissions',
+                to: '/admissions',
+            },
+            {
+                title: 'Student Life',
+                to: '/student-life',
+            },
         ],
     // ===================================
     // Hero Section

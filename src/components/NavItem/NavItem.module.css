@@ -1,3 +1,9 @@
+.link {
+    text-decoration: none;
+    color: rgba(38, 38, 38, 1);
+    height: 100%;
+}
+
 .navItem {
     display: flex;
     align-items: center;
@@ -7,10 +13,14 @@
     list-style: none;
 }
 
-.active {
+.dark {
     background-color: rgba(255, 174, 128, 1);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.active {
+    background-color: rgba(255, 239, 229, 1);
 }
 
 .navItem li {
@@ -27,7 +37,7 @@
     background-color: rgba(255, 239, 229, 1);
 }
 
-.active:hover {
+.dark:hover {
     border-start-end-radius: 10px;
     border-end-end-radius: 10px;
     background-color: rgb(239, 163, 120);

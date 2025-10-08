@@ -12,7 +12,7 @@ const Nav = ({ navItems }) => {
                 </div>
                 <Container className={styles.navItems}>
                     <NavItem navItems={navItems} />
-                    <NavItem navItems={['Contact']} active={true} />
+                    <NavItem navItems={[{ title: 'Contact', to: "" }]} dark={true} />
                 </Container>
                 <Drawer navItems={navItems} className={styles.drawer} />
             </Container>
