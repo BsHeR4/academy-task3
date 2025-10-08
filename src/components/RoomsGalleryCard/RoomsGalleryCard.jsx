@@ -6,16 +6,7 @@ import IconButton from '../IconButton/IconButton'
 import { useEffect, useState } from 'react'
 import { IoArrowBackSharp, IoArrowForwardSharp } from 'react-icons/io5'
 
-const RoomsGalleryCard = ({ title, description, cardImgs }) => {
-
-    const imgs = [
-        "imgs/classrooms1.png",
-        "imgs/classrooms2.png",
-        "imgs/classrooms3.png",
-        "imgs/classrooms4.png",
-        "imgs/classrooms4.png",
-        "imgs/classrooms4.png",
-    ];
+const RoomsGalleryCard = ({ title, description, imgs }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(4);
@@ -61,13 +52,13 @@ const RoomsGalleryCard = ({ title, description, cardImgs }) => {
                 </div>
             </div>
             <Container className={styles.header}>
-                <h2>Classrooms</h2>
+                <h2>{title}</h2>
                 <div className={styles.buttons}>
                     <IconButton onClick={goToPrevious} className={styles.arrowButton} icon={<IoArrowBackSharp />} />
                     <IconButton onClick={goToNext} className={styles.arrowButton} icon={<IoArrowForwardSharp />} />
                 </div>
             </Container>
-            <p>Our well-equipped classrooms are designed to provide a nurturing and stimulating learning environment. Each classroom is thoughtfully arranged to inspire creativity, curiosity, and engagement.</p>
+            <p>{description}</p>
         </BaseCard>
     )
 }

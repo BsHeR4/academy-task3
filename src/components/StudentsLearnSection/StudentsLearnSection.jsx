@@ -3,20 +3,24 @@ import Section from './../Section/Section'
 import BaseCard from '../BaseCard/BaseCard'
 import StudentsLearnCard from '../StudentsLearnCard/StudentsLearnCard'
 
-const StudentsLearnSection = () => {
+const StudentsLearnSection = ({ studentLearnData }) => {
     return (
         <Section
-            boxTitle={"Our Features"}
-            title={"What Students Learn"}
-            description={"At Little Learners Academy, we strive to cultivate a love for learning and equip children with essential skills for their future success. Our academic programs cover a wide range of subjects, allowing students to develop a strong foundation and discover their interests. Some key areas of learning include"}
+            boxTitle={studentLearnData.pillTitle}
+            title={studentLearnData.title}
+            description={studentLearnData.description}
         >
             <div className={styles.studentLearnCards}>
-                <StudentsLearnCard></StudentsLearnCard>
-                <StudentsLearnCard></StudentsLearnCard>
-                <StudentsLearnCard></StudentsLearnCard>
-                <StudentsLearnCard></StudentsLearnCard>
-                <StudentsLearnCard></StudentsLearnCard>
-                <StudentsLearnCard></StudentsLearnCard>
+                {
+                    studentLearnData.items.map((card, index) => (
+                        <StudentsLearnCard
+                            img={card.image}
+                            title={card.title}
+                            description={card.description}
+                            key={index}
+                        />
+                    ))
+                }
             </div>
 
         </Section>

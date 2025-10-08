@@ -3,28 +3,33 @@ import styles from './RoomsGallerySection.module.css'
 import RoomsGalleryCard from '../RoomsGalleryCard/RoomsGalleryCard'
 import Button from '../Button/Button'
 
-const RoomsGallerySection = () => {
-    const categories = ['All', 'Classrooms', 'Library', 'Science Lab', 'Computer Lab', 'Garden and Nature Area']
+const RoomsGallerySection = ({ roomsGalleryData }) => {
 
     return (
         <Section
             className
-            boxTitle={"Our Gallery"}
-            title={"Our Rooms Gallery"}
-            description={"Step into our Gallery and immerse yourself in a visual journey of cherished moments and unforgettable experiences at our kindergarten school."}
+            boxTitle={roomsGalleryData.pillTitle}
+            title={roomsGalleryData.title}
+            description={roomsGalleryData.description}
         >
             <div className={styles.categories}>
                 {
-                    categories.map((category, index) => (
+                    roomsGalleryData.categories.map((category, index) => (
                         <Button type='normal'>{category}</Button>
                     ))
                 }
             </div>
             <div className={styles.cards}>
-                <RoomsGalleryCard />
-                <RoomsGalleryCard />
-                <RoomsGalleryCard />
-                <RoomsGalleryCard />
+                {
+                    roomsGalleryData.sections.map((section, index) => (
+                        <RoomsGalleryCard
+                            imgs={section.images}
+                            title={section.title}
+                            description={section.description}
+                            key={index}
+                        />
+                    ))
+                }
             </div>
         </Section>
     )
