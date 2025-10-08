@@ -22,4 +22,13 @@
 }
 
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .categories {
+        padding-bottom: 197px;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        gap: 197px;
+    }
+}
