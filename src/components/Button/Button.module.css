@@ -1,4 +1,4 @@
-.button {
+.shadowButton {
     width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -13,7 +13,29 @@
     cursor: pointer;
 }
 
-.button:hover {
+.normalButton {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    width: fit-content;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    cursor: pointer;
+}
+
+.normalButton:hover {
+    background-color: rgba(255, 239, 229, 0.171);
+}
+
+.normalButton:focus {
+    background-color: rgba(255, 239, 229, 1);
+}
+
+.shadowButton:hover {
     background-color: rgba(255, 239, 229, 1);
 }
 
@@ -30,10 +52,17 @@
 
 @media screen and (min-width: 993px) and (max-width: 1919px) {
 
-    .button {
+    .shadowButton {
         border-radius: 8px;
         box-shadow: 2px 2px 0px 2px rgba(30, 30, 30, 1);
         font-size: 18px;
+    }
+
+    .normalButton {
+        padding: 8px 14px;
+        border-radius: 6px;
+
+        font-size: 16px;
     }
 
     .content {
@@ -46,12 +75,19 @@
 
 
 @media screen and (max-width: 992px) {
-    .button {
+    .shadowButton {
         padding-top: 16px;
         padding-bottom: 16px;
         border-radius: 6px;
         box-shadow: 2px 2px 0px 1px rgba(30, 30, 30, 1);
         font-size: 16px;
+    }
+
+    .sectionBoxHeader {
+        padding: 8px 14px;
+        border-radius: 6px;
+
+        font-size: 14px;
     }
 
     .content {

@@ -1,0 +1,25 @@
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 295px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 295px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .categories {
+        padding-bottom: 212px;
+    }
+
+    .cards {
+        gap: 212px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {}

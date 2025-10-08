@@ -1,0 +1,134 @@
+.slider {
+    position: relative;
+    padding: 200px 50px 50px 50px;
+
+    h2 {
+        align-self: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(26, 26, 26, 1);
+    }
+
+    p {
+        padding-top: 40px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 150%;
+        color: rgba(76, 76, 77, 1);
+    }
+}
+
+.imgs {
+    width: calc(100% - 100px);
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img {
+    min-width: calc(100% / 4 - 35px);
+    max-width: 344px;
+    max-height: 304px;
+}
+
+.buttons {
+
+    display: flex;
+    gap: 20px;
+
+    .arrowButton {
+        align-self: center;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+    .slider {
+        padding: 170px 40px 40px 40px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            padding-top: 30px;
+            font-size: 20px;
+        }
+    }
+
+    .imgs {
+        width: calc(100% - 80px);
+    }
+
+    .slides {
+        gap: 40px;
+    }
+
+    .buttons {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slider {
+        padding: 140px 30px 30px 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 28px;
+            padding-top: 20px;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        .header {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    .imgs {
+        width: calc(100% - 60px);
+    }
+
+    .img {
+        min-width: calc(100% / 2 - 13px);
+        max-width: 298px;
+        max-height: 203px;
+    }
+
+    .slides {
+        gap: 15px;
+    }
+
+    .buttons {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .slides {
+        gap: 5px;
+    }
+
+    .img {
+        min-width: calc(100% - 5px);
+        max-width: 298px;
+        max-height: 203px;
+    }
+}
