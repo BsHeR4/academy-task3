@@ -1,0 +1,141 @@
+.process {
+    padding: 50px;
+
+    h3 {
+        padding-bottom: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: rgba(76, 76, 77, 1);
+    }
+}
+
+.step {
+    max-width: fit-content;
+    padding: 14px 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.circle {
+    position: absolute;
+    flex-shrink: 0;
+    right: 50%;
+    bottom: 90%;
+    transform: translateX(50%);
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-radius: 50%;
+}
+
+.verticalRectangular {
+    position: relative;
+    left: 50%;
+    width: 12px;
+    height: 69px;
+    background: rgba(255, 190, 153, 1);
+}
+
+.verticalRectangular::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container {
+    max-width: fit-content;
+    position: relative;
+}
+
+.bottomVerticalRectangular {
+    display: none;
+    position: relative;
+    left: 50%;
+    width: 12px;
+    height: 69px;
+    background: rgba(255, 190, 153, 1);
+}
+
+.bottomVerticalRectangular::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    .process {
+        padding: 40px;
+
+        h3 {
+            padding-bottom: 16px;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .step {
+        padding: 10px 24px;
+        font-size: 44px;
+    }
+
+    .verticalRectangular {
+        margin-top: 4px;
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .process {
+        position: relative;
+        z-index: 2;
+        padding: 30px;
+
+        h3 {
+            padding-bottom: 14px;
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .step {
+        padding: 10px 24px;
+        font-size: 40px;
+    }
+
+    .verticalRectangular {
+        margin-top: 4px;
+        height: 43px;
+    }
+
+    .bottomVerticalRectangular {
+        display: block;
+    }
+
+    .container {
+        margin: auto;
+    }
+}

@@ -5,6 +5,7 @@ import { pageData } from './../src/pages/Home/HomeData'
 import Footer from './components/Footer/Footer'
 import Academics from './pages/Academics/Academics'
 import { Route, Routes } from 'react-router-dom'
+import Admission from './pages/Admission/Admission'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/about-us' element={<AboutUs />}></Route>
         <Route path='/academics' element={<Academics />}></Route>
+        <Route path='/admissions' element={<Admission />}></Route>
       </Routes>
     </>
   )
