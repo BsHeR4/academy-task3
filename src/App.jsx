@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Academics from './pages/Academics/Academics'
 import { Route, Routes } from 'react-router-dom'
 import Admission from './pages/Admission/Admission'
+import StudentLife from './pages/StudentLife/StudentLife'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs />}></Route>
         <Route path='/academics' element={<Academics />}></Route>
         <Route path='/admissions' element={<Admission />}></Route>
+        <Route path='/student-life' element={<StudentLife />}></Route>
       </Routes>
     </>
   )
