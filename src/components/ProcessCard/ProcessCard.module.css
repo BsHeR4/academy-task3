@@ -68,6 +68,10 @@
     width: 12px;
     height: 69px;
     background: rgba(255, 190, 153, 1);
+
+    &.lastCard {
+        display: none;
+    }
 }
 
 .bottomVerticalRectangular::after {

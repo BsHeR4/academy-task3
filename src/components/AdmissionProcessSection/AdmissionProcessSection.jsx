@@ -15,7 +15,7 @@ const AdmissionProcessSection = () => {
                 <ProcessCard />
                 <ProcessCard />
                 <ProcessCard />
-                <ProcessCard />
+                <ProcessCard lastCard={true} />
             </div>
         </Section>
     )
