@@ -29,22 +29,50 @@
 .img {
     position: relative;
     padding-bottom: 16px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        background-color: rgba(255, 239, 229, 1);
+        width: 125px;
+        height: calc(100% + 50px);
+        border: 2px solid rgba(38, 38, 38, 1);
+        border-top: none;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    &.horizontalBar::after {
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% + 80px);
+        height: 93px;
+        border: 2px solid rgba(38, 38, 38, 1);
+        border-left: none;
+        border-right: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &.bottomHorizontalBar::after {
+        left: -40px;
+        top: 100%;
+        transform: translateY(calc(-100% - 20px));
+        width: calc(100% + 80px);
+        height: 93px;
+        border: 2px solid rgba(38, 38, 38, 1);
+        border-left: none;
+        border-right: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 
-.img::after {
-    position: absolute;
-    content: '';
-    left: 50%;
-    transform: translateX(-50%);
-    top: -50px;
-    background-color: rgba(255, 239, 229, 1);
-    width: 125px;
-    height: calc(100% + 50px);
-    border: 2px solid rgba(38, 38, 38, 1);
-    border-top: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
+
 
 @media screen and (min-width: 993px) and (max-width: 1919px) {
     .studentLearnSection {
