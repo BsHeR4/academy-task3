@@ -1,0 +1,71 @@
+.contactButton {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #262626;
+    border-radius: 12px;
+
+    .icon {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #262626;
+        border-radius: 6px;
+        font-size: 24px;
+    }
+
+    p {
+        min-width: fit-content;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    &:hover {
+        background-color: #FFDECC;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+
+    .contactButton {
+        padding: 16px;
+        gap: 8px;
+        border-radius: 10px;
+
+        .icon {
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+
+    .contactButton {
+        padding: 16px;
+        gap: 8px;
+        border-radius: 10px;
+
+        .icon {
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

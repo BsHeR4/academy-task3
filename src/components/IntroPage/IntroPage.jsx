@@ -4,11 +4,11 @@ import Container from './../Container/Container'
 import SectionBoxHeader from './../SectionBoxHeader/SectionBoxHeader'
 import CubeShape from './../CubeShape/CubeShape'
 
-const IntroPage = ({ boxTitle, title, description }) => {
+const IntroPage = ({ boxTitle, title, description, children }) => {
     const layout = [4, 3, 2, 1];
 
     return (
-        <div className={styles.IntroPage}>
+        <section className={styles.IntroPage}>
             <BaseCard className={styles.IntroPageCard}>
                 <div className={styles.shapeContainer}>
                     {layout.map((numberOfShapes, rowIndex) => (
@@ -24,10 +24,13 @@ const IntroPage = ({ boxTitle, title, description }) => {
                         <SectionBoxHeader>{boxTitle}</SectionBoxHeader>
                         <h2>{title}</h2>
                     </div>
-                    <p>{description}</p>
+                    <div>
+                        <p className={styles.contentParagraph}>{description}</p>
+                        {children}
+                    </div>
                 </Container>
             </BaseCard>
-        </div>
+        </section>
     )
 }
 

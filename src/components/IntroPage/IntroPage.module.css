@@ -1,7 +1,7 @@
 .IntroPageCard {
     position: relative;
     overflow: hidden;
-    padding: 150px 120px;
+    padding: 150px 150px;
 }
 
 .IntroPage {
@@ -35,7 +35,8 @@
         line-height: 130%;
     }
 
-    p {
+    .contentParagraph {
+        max-width: 765px;
         font-weight: 500;
         font-size: 20px;
         line-height: 150%;
@@ -60,7 +61,7 @@
             font-size: 38px;
         }
 
-        p {
+        .contentParagraph {
             font-size: 16px;
             max-width: 535px;
         }
@@ -90,7 +91,8 @@
             font-size: 28px;
         }
 
-        p {
+        .contentParagraph {
+            max-width: 535px;
             font-size: 16px;
             max-width: 298px;
         }
