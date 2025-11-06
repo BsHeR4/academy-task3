@@ -5,6 +5,7 @@ import { HiPhone } from "react-icons/hi2";
 import { HiMapPin } from "react-icons/hi2";
 import { HiClock } from "react-icons/hi2";
 import ContactButton from '../../components/ContactButton/ContactButton';
+import StudentInformation from '../../components/StudentInformation/StudentInformation';
 
 const Contact = () => {
     return (
@@ -33,6 +34,8 @@ const Contact = () => {
                     />
                 </div>
             </IntroPage>
+
+            <StudentInformation />
         </div>
     )
 }
