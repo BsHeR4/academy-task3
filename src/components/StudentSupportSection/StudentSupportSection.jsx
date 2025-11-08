@@ -10,7 +10,7 @@ const StudentSupportSection = ({ achievementsData }) => {
             description={"At Little Learners Academy, we are committed to providing a supportive and nurturing environment that meets the unique needs of each student. Our student support services include"}
         >
             <div className={styles.cards}>
-                {achievementsData.items.map((achievement, index) => (
+                {achievementsData.cards.map((achievement, index) => (
                     <BenefitCard
                         key={index}
                         icon={achievement.icon}

@@ -11,7 +11,7 @@ const ExtracurricularActivitiesSection = ({ FeaturesData }) => {
         >
 
             <div className={styles.cards}>
-                {FeaturesData.items.map((feature, index) => (
+                {FeaturesData.cards.map((feature, index) => (
                     <BenefitCard
                         key={index}
                         icon={feature.icon}
