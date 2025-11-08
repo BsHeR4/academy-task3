@@ -2,20 +2,26 @@ import ProcessCard from '../ProcessCard/ProcessCard'
 import Section from '../Section/Section'
 import styles from './AdmissionProcessSection.module.css'
 
-const AdmissionProcessSection = () => {
+const AdmissionProcessSection = ({ admissionData }) => {
     return (
         <Section
-            boxTitle={"Process"}
-            title={"Admission Process"}
-            description={"Embark on a remarkable educational journey with us! Our Admission and Enrollment process is the gateway to providing your child with an exceptional learning experience at our kindergarten school"}
+            boxTitle={admissionData.pillTitle}
+            title={admissionData.title}
+            description={admissionData.description}
         >
             <div className={styles.cards}>
-                <ProcessCard />
-                <ProcessCard />
-                <ProcessCard />
-                <ProcessCard />
-                <ProcessCard />
-                <ProcessCard lastCard={true} />
+                {
+                    admissionData.cards.map((card, index) => {
+
+                        return <ProcessCard
+                            key={index}
+                            step={card.step}
+                            title={card.title}
+                            description={card.description}
+                            lastCard={admissionData.cards.length - 1 == index ? true : false}
+                        />
+                    })
+                }
             </div>
         </Section>
     )

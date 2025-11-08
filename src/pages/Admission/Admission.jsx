@@ -2,17 +2,18 @@ import AdmissionProcessSection from '../../components/AdmissionProcessSection/Ad
 import FeeStructureSection from '../../components/FeeStructureSection/FeeStructureSection'
 import IntroPage from '../../components/IntroPage/IntroPage'
 import styles from './Admission.module.css'
+import { admissionsPageData } from './../../data/AdmissionsPageData'
 
 const Admission = () => {
     return (
         <div>
             <IntroPage
-                boxTitle={"Admission"}
-                title={"Join Our Family of Young Learners"}
-                description={"At Little Learners Academy, we welcome you to embark on an exciting educational journey for your child. Our admission process is designed to be transparent, straightforward, and inclusive. Here's a step-by-step guide to joining our school"}
+                boxTitle={admissionsPageData.introPage.boxTitle}
+                title={admissionsPageData.introPage.title}
+                description={admissionsPageData.introPage.description}
             />
-            <AdmissionProcessSection />
-            <FeeStructureSection />
+            <AdmissionProcessSection admissionData={admissionsPageData.process} />
+            <FeeStructureSection feeData={admissionsPageData.features} />
         </div>
     )
 }

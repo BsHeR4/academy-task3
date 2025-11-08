@@ -1,13 +1,13 @@
 import styles from './ProcessCard.module.css'
 import BaseCard from './../BaseCard/BaseCard'
 
-const ProcessCard = ({ lastCard = false }) => {
+const ProcessCard = ({ step, title, description, lastCard = false }) => {
     return (
-        <div>
+        <div className={styles.processCard}>
 
             <div className={styles.container}>
                 <BaseCard className={styles.step}>
-                    <span>03</span>
+                    <span>{step}</span>
                 </BaseCard>
                 <div className={styles.verticalRectangular}>
                     <div className={`${styles.circle}`}>
@@ -15,8 +15,8 @@ const ProcessCard = ({ lastCard = false }) => {
                 </div>
             </div>
             <BaseCard className={styles.process}>
-                <h3>Inquiry</h3>
-                <p>Submit an inquiry form through our website or contact our admissions office to express your interest in Little Learners Academy.
+                <h3>{title}</h3>
+                <p>{description}
                 </p>
             </BaseCard>
             <div className={`${styles.bottomVerticalRectangular} ${lastCard ? styles.lastCard : ''}`}>
