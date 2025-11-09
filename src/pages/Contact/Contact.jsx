@@ -1,41 +1,34 @@
 import IntroPage from './../../components/IntroPage/IntroPage'
 import styles from './Contact.module.css'
 import { TbMailFilled } from "react-icons/tb";
-import { HiPhone } from "react-icons/hi2";
-import { HiMapPin } from "react-icons/hi2";
-import { HiClock } from "react-icons/hi2";
+import { HiPhone, HiMapPin, HiClock } from "react-icons/hi2";
 import ContactButton from '../../components/ContactButton/ContactButton';
 import StudentInformation from '../../components/StudentInformation/StudentInformation';
+import { ContactPageData } from './../../data/ContactPageData'
 
 const Contact = () => {
+    const icons = {
+        TbMailFilled,
+        HiPhone,
+        HiMapPin,
+        HiClock,
+    };
     return (
         <div>
             <IntroPage
-                boxTitle={"Contact Us"}
-                title={"Feel Free To Connect With Us"}
-                description={"We value open communication and are eager to assist you with any inquiries. Feel free to reach out to us through any of the following contact methods"}
+                boxTitle={ContactPageData.introPage.boxTitle}
+                title={ContactPageData.introPage.title}
+                description={ContactPageData.introPage.description}
             >
                 <div className={styles.items}>
-                    <ContactButton
-                        icon={<TbMailFilled />}
-                        title={"hello@littlelearners.com"}
-                    />
-                    <ContactButton
-                        icon={<HiPhone />}
-                        title={"+91 91813 23 2309"}
-                    />
-                    <ContactButton
-                        icon={<HiMapPin />}
-                        title={"Somewhere in the World"}
-                    />
-                    <ContactButton
-                        icon={<HiClock />}
-                        title={"Office Hours - 9am - 6 pm"}
-                    />
+                    {ContactPageData.introPage.contacts.map((contact, index) => {
+                        const IconComponent = icons[contact.icon]
+                        return <ContactButton key={index} icon={<IconComponent />} title={contact.title} />
+                    })}
                 </div>
             </IntroPage>
 
-            <StudentInformation />
+            <StudentInformation studentInformationData={ContactPageData.info} />
         </div>
     )
 }
