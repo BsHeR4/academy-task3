@@ -46,11 +46,11 @@
     }
 
     &.horizontalBar::after {
-        left: -40px;
+        left: -50px;
         top: 50%;
         transform: translateY(-50%);
-        width: calc(100% + 80px);
-        height: 93px;
+        width: calc(100% + 100px);
+        height: 89.8px;
         border: 2px solid rgba(38, 38, 38, 1);
         border-left: none;
         border-right: none;
@@ -59,11 +59,11 @@
     }
 
     &.bottomHorizontalBar::after {
-        left: -40px;
+        left: -50px;
         top: 100%;
         transform: translateY(calc(-100% - 20px));
-        width: calc(100% + 80px);
-        height: 93px;
+        width: calc(100% + 100px);
+        height: 89.8px;
         border: 2px solid rgba(38, 38, 38, 1);
         border-left: none;
         border-right: none;
@@ -89,12 +89,27 @@
         }
     }
 
-    .img::after {
-        width: 103px;
-        top: -40px;
-        height: calc(100% + 40px);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    .img {
+        position: relative;
+        padding-bottom: 16px;
+
+        &::after {
+            width: 103px;
+            top: -40px;
+            height: calc(100% + 40px);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        &.horizontalBar::after {
+            left: -40px;
+            width: calc(100% + 80px);
+        }
+
+        &.bottomHorizontalBar::after {
+            left: -40px;
+            width: calc(100% + 80px);
+        }
     }
 }
 
@@ -113,11 +128,27 @@
         }
     }
 
-    .img::after {
-        width: 93px;
-        top: -30px;
-        height: calc(100% + 30px);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    .img {
+        position: relative;
+        padding-bottom: 16px;
+
+        &::after {
+            width: 93px;
+            top: -30px;
+            height: calc(100% + 30px);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        &.horizontalBar::after {
+            left: -30px;
+            width: calc(100% + 60px);
+        }
+
+        &.bottomHorizontalBar::after {
+            left: -30px;
+            width: calc(100% + 60px);
+        }
     }
+
 }
