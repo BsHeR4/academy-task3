@@ -22,7 +22,7 @@ const Drawer = ({ navItems, className }) => {
                 <IoMdClose onClick={ActivateDrawer} className={styles.closeIcon} />
                 <ul className={`${styles.darwItems}`}>
                     {navItems.map((item, index) => (
-                        <NavLink to={item.to}>
+                        <NavLink to={item.to} onClick={ActivateDrawer}>
                             <li key={index} className={styles.item}>{item.title}</li>
                         </NavLink>
                     ))}
