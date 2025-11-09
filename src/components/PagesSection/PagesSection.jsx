@@ -15,6 +15,7 @@ const PagesSection = ({ pagesData }) => {
                         key={index}
                         title={page.title}
                         description={page.description}
+                        link={page.url}
                     />
                 ))}
             </div>

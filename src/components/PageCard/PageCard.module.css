@@ -3,6 +3,11 @@
     padding: 80px;
     flex-direction: column;
     justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: #333333;
+    }
 }
 
 .pageCardTitle {

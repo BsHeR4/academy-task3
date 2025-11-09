@@ -8,10 +8,12 @@ import { Route, Routes } from 'react-router-dom'
 import Admission from './pages/Admission/Admission'
 import StudentLife from './pages/StudentLife/StudentLife'
 import Contact from './pages/Contact/Contact'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about-us' element={<AboutUs />}></Route>

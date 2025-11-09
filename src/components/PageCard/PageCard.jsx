@@ -1,9 +1,10 @@
+import { NavLink } from 'react-router'
 import BaseCard from '../BaseCard/BaseCard'
 import Button from '../Button/Button'
 import Container from './../Container/Container'
 import styles from './PageCard.module.css'
 
-const PageCard = ({ title, description }) => {
+const PageCard = ({ title, description, link }) => {
     return (
         <BaseCard className={styles.pageCard}>
             <h3 className={styles.pageCardTitle}>{title}</h3>
@@ -22,9 +23,11 @@ const PageCard = ({ title, description }) => {
                 </div>
             </Container>
             <p className={styles.pageCardDescription}>{description}</p>
-            <Button>
-                Learn More
-            </Button>
+            <NavLink to={link}>
+                <Button>
+                    Learn More
+                </Button>
+            </NavLink>
         </BaseCard>
     )
 }
